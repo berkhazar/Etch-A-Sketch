@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1><strong>Board</strong></h1>
+    </div>
+    <div>
+      <input type="range" id="boardSize" value="2" max="64" min="2" step="2" />
+    </div>
+    <span id="board-grid">2x2</span>
+    <div class="main-content">
+      <div class="options">
+        <input type="color" id="penColor" value="black" />
+        <button id="blackPen">Black Pen</button>
+        <button id="eraser">Eraser</button>
+        <button id="toggle">Toggle Grid Lines</button>
+        <button id="reset">Reset Board</button>
+      </div>
+      <div class="board"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
